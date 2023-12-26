@@ -38,8 +38,8 @@ def get_ip_reputation(ip, access_token):
     else:
         return f"Failed with status code {response.status_code}"
 
-# Replace with the path to your CSV file
-file_path = 'YOUR_FLOW_TRAFFIC_CSV_FILE.csv'
+# Ask the user for the path to the CSV file
+file_path = input("Enter the path to your CSV file: ")
 
 # Read the CSV file
 df = pd.read_csv(file_path)
